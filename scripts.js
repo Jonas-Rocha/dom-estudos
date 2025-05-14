@@ -15,7 +15,7 @@
 //acessar elemento com class (SELETOR class)
 // const guestsByClass = document.getElementsByClassName("guest");
 // console.log(guestsByClass);
-s
+s;
 //Exibir o primeiro elemento da lista
 // console.log(guestsByClass.item(0)); //pegando o "item da lista de metodos"
 // console.log(guestsByClass[1]);
@@ -47,3 +47,5 @@ s
 // console.log(guest.textContent); //Retorna o conteúdo visível e oculto.
 // console.log(guest.innerText); //Retorna sem formatação o texto.
 // console.log(guest.innerHTML); //Retorna o HTML do elemento como texto.
+
+//Proxima aula é: Alterando estilos.
