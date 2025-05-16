@@ -15,7 +15,7 @@
 //acessar elemento com class (SELETOR class)
 // const guestsByClass = document.getElementsByClassName("guest");
 // console.log(guestsByClass);
-s;
+
 //Exibir o primeiro elemento da lista
 // console.log(guestsByClass.item(0)); //pegando o "item da lista de metodos"
 // console.log(guestsByClass[1]);
@@ -48,4 +48,17 @@ s;
 // console.log(guest.innerText); //Retorna sem formatação o texto.
 // console.log(guest.innerHTML); //Retorna o HTML do elemento como texto.
 
-//Proxima aula é: Alterando estilos.
+const input = document.querySelector("#name");
+//Adiciona a classe.
+//input.classList.add("input-error");
+
+//Remove a classe.
+//input.classList.remove("input-error");
+
+//Se tiver a classe ele remove. se não tiver, ele adicona.
+//input.classList.toggle("input-error");
+
+const button = document.querySelector("button");
+
+//Modificar as propriedades css do elemento.
+button.style.backgroundColor = "red";
