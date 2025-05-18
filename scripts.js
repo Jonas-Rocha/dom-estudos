@@ -48,7 +48,7 @@
 // console.log(guest.innerText); //Retorna sem formatação o texto.
 // console.log(guest.innerHTML); //Retorna o HTML do elemento como texto.
 
-const input = document.querySelector("#name");
+// const input = document.querySelector("#name");
 //Adiciona a classe.
 //input.classList.add("input-error");
 
@@ -58,7 +58,11 @@ const input = document.querySelector("#name");
 //Se tiver a classe ele remove. se não tiver, ele adicona.
 //input.classList.toggle("input-error");
 
-const button = document.querySelector("button");
+// const button = document.querySelector("button");
 
 //Modificar as propriedades css do elemento.
-button.style.backgroundColor = "red";
+// button.style.backgroundColor = "red";
+
+
+//>>>>>>>>>>>>>>>Criando Elementos e inserindo HTML por meio de JS
+
