@@ -66,8 +66,7 @@
 //>>>>>>>>>>>>>>>Criando Elementos e inserindo HTML por meio de JS
 
 // const guests = document.querySelector("ul");
-//console.log(guests);
-
+// console.log(guests);
 // const newGuest = document.createElement("li");
 // newGuest.classList.add("guest");
 
@@ -81,12 +80,12 @@
 //adiciona após o último filho.
 //newGuest.append(guestName, guestSurname /*Também funciona com virgula*/); //adiciona dentro do "li" o "span" do guestName
 //adiciona antes do primeiro filho.
-//newGuest.prepend(guestSurname);
+// newGuest.prepend(guestSurname);
 
 //é mais simples que o append e aceita apenas um argumento sem virgula
 // newGuest.appendChild(guestName);
 
-// guests.prepend(newGuest);
+// guests.append(newGuest);
 
 //>>>>>>>>>>>>>>>>>>Manipulando Atributos
 
@@ -98,3 +97,24 @@
 
 // Remover um atributo.
 //input.removeAttribute("id");
+
+const input = document.querySelector("input");
+
+let inputValue = "";
+
+input.addEventListener("keyup", (abobora) => {
+  console.log(abobora);
+  inputValue = input.value;
+  console.log(inputValue);
+});
+
+const addNewGuest = (event) => {
+  event.preventDefault();
+  const guests = document.querySelector("ul");
+  const newGuest = document.createElement("li");
+  newGuest.classList.add("guest");
+  const guestName = document.createElement("span");
+  guestName.textContent = inputValue;
+  newGuest.appendChild(guestName);
+  guests.append(newGuest);
+};
