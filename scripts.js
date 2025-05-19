@@ -65,6 +65,25 @@
 
 //>>>>>>>>>>>>>>>Criando Elementos e inserindo HTML por meio de JS
 
-// const guests = document.querySelector("ul");
+const guests = document.querySelector("ul");
+//console.log(guests);
 
-// const newGuest = document.createElement("li");
+const newGuest = document.createElement("li");
+newGuest.classList.add("guest");
+
+const guestName = document.createElement("span");
+
+guestName.textContent = "Diego";
+
+//const guestSurname = document.createElement("span");
+//guestSurname.textContent = "Fernandes";
+
+//adiciona após o último filho.
+//newGuest.append(guestName, guestSurname /*Também funciona com virgula*/); //adiciona dentro do "li" o "span" do guestName
+//adiciona antes do primeiro filho.
+//newGuest.prepend(guestSurname);
+
+//é mais simples que o append e aceita apenas um argumento sem virgula
+newGuest.appendChild(guestName);
+
+guests.prepend(newGuest);
