@@ -65,15 +65,15 @@
 
 //>>>>>>>>>>>>>>>Criando Elementos e inserindo HTML por meio de JS
 
-const guests = document.querySelector("ul");
+// const guests = document.querySelector("ul");
 //console.log(guests);
 
-const newGuest = document.createElement("li");
-newGuest.classList.add("guest");
+// const newGuest = document.createElement("li");
+// newGuest.classList.add("guest");
 
-const guestName = document.createElement("span");
+// const guestName = document.createElement("span");
 
-guestName.textContent = "Diego";
+// guestName.textContent = "Diego";
 
 //const guestSurname = document.createElement("span");
 //guestSurname.textContent = "Fernandes";
@@ -84,6 +84,17 @@ guestName.textContent = "Diego";
 //newGuest.prepend(guestSurname);
 
 //é mais simples que o append e aceita apenas um argumento sem virgula
-newGuest.appendChild(guestName);
+// newGuest.appendChild(guestName);
 
-guests.prepend(newGuest);
+// guests.prepend(newGuest);
+
+//>>>>>>>>>>>>>>>>>>Manipulando Atributos
+
+//const input = document.querySelector("input");
+
+// Atualizar um atributo.
+//input.setAttribute("disabled", true);
+//input.setAttribute("type", "file");
+
+// Remover um atributo.
+//input.removeAttribute("id");
