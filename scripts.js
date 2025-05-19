@@ -13,12 +13,12 @@
 // console.dir(guest);
 
 //acessar elemento com class (SELETOR class)
-// const guestsByClass = document.getElementsByClassName("guest");
-// console.log(guestsByClass);
+//const guestsByClass = document.getElementsByClassName("guest");
+//console.log(guestsByClass);
 
 //Exibir o primeiro elemento da lista
-// console.log(guestsByClass.item(0)); //pegando o "item da lista de metodos"
-// console.log(guestsByClass[1]);
+//console.log(guestsByClass.item(0)); //pegando o "item da lista de metodos"
+//console.log(guestsByClass[1]);
 
 //Selecionar uma lista de elementos pela tag
 // const guestByTag = document.getElementsByTagName("li");
@@ -63,6 +63,8 @@
 //Modificar as propriedades css do elemento.
 // button.style.backgroundColor = "red";
 
-
 //>>>>>>>>>>>>>>>Criando Elementos e inserindo HTML por meio de JS
 
+// const guests = document.querySelector("ul");
+
+// const newGuest = document.createElement("li");
