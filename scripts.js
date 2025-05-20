@@ -98,23 +98,66 @@
 // Remover um atributo.
 //input.removeAttribute("id");
 
-const input = document.querySelector("input");
+// >>>>>>>>>>>>>>>>>>>>>>>>TREINO FREESTYLE LOL
 
-let inputValue = "";
+// const input = document.querySelector("input");
 
-input.addEventListener("keyup", (abobora) => {
-  console.log(abobora);
-  inputValue = input.value;
-  console.log(inputValue);
-});
+// let inputValue = "";
 
-const addNewGuest = (event) => {
-  event.preventDefault();
-  const guests = document.querySelector("ul");
-  const newGuest = document.createElement("li");
-  newGuest.classList.add("guest");
-  const guestName = document.createElement("span");
-  guestName.textContent = inputValue;
-  newGuest.appendChild(guestName);
-  guests.append(newGuest);
-};
+// input.addEventListener("keyup", (abobora) => {
+//   console.log(abobora);
+//   inputValue = input.value;
+//   console.log(inputValue);
+// });
+
+// const addNewGuest = (event) => {
+//   event.preventDefault();
+//   const guests = document.querySelector("ul");
+//   const newGuest = document.createElement("li");
+//   newGuest.classList.add("guest");
+//   const guestName = document.createElement("span");
+//   guestName.textContent = inputValue;
+//   newGuest.appendChild(guestName);
+//   guests.append(newGuest);
+// };
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Aprendendo Eventos
+
+// window.addEventListener("load", () => {
+//   console.log("A página foi carregada!");
+// });
+
+// addEventListener("click", (event) => {
+//   event.preventDefault();
+
+//   //Retorna todas as informações do evento.
+//   console.log(event);
+
+//   //Retorna o elemento clickado.
+//   console.log(event.target.text);
+// });
+
+//>>>>>>>>>>>>>>>>>>>Eventos em um elemento específico
+
+// const ul = document.querySelector("ul");
+// ul.addEventListener("scroll", () => {
+//   console.log(ul.scrollTop);
+
+//   if (ul.scrollTop > 302) {
+//     //console.log("Fim da lista");
+
+//     ul.scrollTo({
+//       top: 0,
+//       behavior: "smooth",
+//     });
+//   }
+// });
+
+// const button = document.querySelector("button");
+
+// button.addEventListener("click", (event) => {
+//   event.preventDefault();
+//   console.log("Clickou!");
+// });
+
+
