@@ -130,10 +130,10 @@
 // addEventListener("click", (event) => {
 //   event.preventDefault();
 
-//   //Retorna todas as informações do evento.
+//   /*Retorna todas as informações do evento.*/
 //   console.log(event);
 
-//   //Retorna o elemento clickado.
+//   /*Retorna o elemento clickado.*/
 //   console.log(event.target.text);
 // });
 
@@ -144,7 +144,7 @@
 //   console.log(ul.scrollTop);
 
 //   if (ul.scrollTop > 302) {
-//     //console.log("Fim da lista");
+//     /*console.log("Fim da lista");*/
 
 //     ul.scrollTo({
 //       top: 0,
@@ -160,4 +160,37 @@
 //   console.log("Clickou!");
 // });
 
+const form = document.querySelector("form");
 
+//form.addEventListener("//aqui eu poderia escolher qual evento eu iria querer lidar",);
+
+form.onsubmit /*aqui eu poderia escolher especificamente o evento "onsubmit" para trabalhar*/ =
+  (event) => {
+    event.preventDefault();
+    console.log("Você fez submit no formulário #1");
+    /*o evento "onsubmit" diferente do "Onclick" aceita imprimir a tecla "enter" por exemplo, diferente do "onclick" que é apenas clickando*/
+  };
+
+form.onsubmit /*aqui eu poderia escolher especificamente o evento "onsubmit" para trabalhar*/ =
+  (event) => {
+    event.preventDefault();
+    console.log("Você fez submit no formulário #2");
+    /*o evento "onsubmit" diferente do "Onclick" aceita imprimir a tecla "enter" por exemplo, diferente do "onclick" que é apenas clickando*/
+  };
+
+//>>>>>>>>>SEMPRE QUE FAZEMOS COM O ONSUBMIT ELE APENAS IRÁ CONSIDERAR O ÚLTIMO QUE VOCÊ CRIOU E NÃO IRÁ CONSIDERAR OS QUE VIERAM ANTES
+//MESMO USANDO O ONSUBMIT COMO EXEMPLO, A IDEIA É A MESMA COM O ONCLICK ETC
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  console.log("Você fez submit no formulário #3");
+});
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  console.log("Você fez submit no formulário #4");
+});
+
+//>>>>>>>>>>>>O addEventListener IRÁ SEMPRE CONSIDERAR TODOS OS CRIADOS
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>EVENTOS DE INPUT
