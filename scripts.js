@@ -160,37 +160,61 @@
 //   console.log("Clickou!");
 // });
 
-const form = document.querySelector("form");
+// const form = document.querySelector("form");
 
 //form.addEventListener("//aqui eu poderia escolher qual evento eu iria querer lidar",);
 
-form.onsubmit /*aqui eu poderia escolher especificamente o evento "onsubmit" para trabalhar*/ =
-  (event) => {
-    event.preventDefault();
-    console.log("Você fez submit no formulário #1");
-    /*o evento "onsubmit" diferente do "Onclick" aceita imprimir a tecla "enter" por exemplo, diferente do "onclick" que é apenas clickando*/
-  };
+// form.onsubmit /*aqui eu poderia escolher especificamente o evento "onsubmit" para trabalhar*/ =
+//   (event) => {
+//     event.preventDefault();
+//     console.log("Você fez submit no formulário #1");
+//     /*o evento "onsubmit" diferente do "Onclick" aceita imprimir a tecla "enter" por exemplo, diferente do "onclick" que é apenas clickando*/
+//   };
 
-form.onsubmit /*aqui eu poderia escolher especificamente o evento "onsubmit" para trabalhar*/ =
-  (event) => {
-    event.preventDefault();
-    console.log("Você fez submit no formulário #2");
-    /*o evento "onsubmit" diferente do "Onclick" aceita imprimir a tecla "enter" por exemplo, diferente do "onclick" que é apenas clickando*/
-  };
+// form.onsubmit /*aqui eu poderia escolher especificamente o evento "onsubmit" para trabalhar*/ =
+//   (event) => {
+//     event.preventDefault();
+//     console.log("Você fez submit no formulário #2");
+//     /*o evento "onsubmit" diferente do "Onclick" aceita imprimir a tecla "enter" por exemplo, diferente do "onclick" que é apenas clickando*/
+//   };
 
 //>>>>>>>>>SEMPRE QUE FAZEMOS COM O ONSUBMIT ELE APENAS IRÁ CONSIDERAR O ÚLTIMO QUE VOCÊ CRIOU E NÃO IRÁ CONSIDERAR OS QUE VIERAM ANTES
 //MESMO USANDO O ONSUBMIT COMO EXEMPLO, A IDEIA É A MESMA COM O ONCLICK ETC
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  console.log("Você fez submit no formulário #3");
-});
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   console.log("Você fez submit no formulário #3");
+// });
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  console.log("Você fez submit no formulário #4");
-});
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   console.log("Você fez submit no formulário #4");
+// });
 
 //>>>>>>>>>>>>O addEventListener IRÁ SEMPRE CONSIDERAR TODOS OS CRIADOS
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>EVENTOS DE INPUT
+
+const input = document.querySelector("input");
+
+//Keydown - quando uma tecla é pressionada (captura tudo, incluindo ctrl, shift, etc.)
+// input.addEventListener("keydown", (event) => {
+//   console.log(event.key);
+// });
+
+//Keypress - quando uma tecla do tipo caractere é pressionada (letras, números, pontos, etc.)
+// input.addEventListener("keypress", (event) => {
+//   console.log(event.key);
+// });
+
+// input.onchange = () => {
+//   console.log("O INPUT MUDOU!");
+// };
+
+// input.onchange = () => {
+//   inputChange();
+// };
+
+// function inputChange() {
+//   console.log("O INPUT MUDOU!");
+// }
