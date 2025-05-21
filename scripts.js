@@ -193,4 +193,4 @@ form.addEventListener("submit", (event) => {
 
 //>>>>>>>>>>>>O addEventListener IRÁ SEMPRE CONSIDERAR TODOS OS CRIADOS
 
-//>>>>>>>>>>>>>>>>>>>>>>>>>>EVENTOS DE INPUT
+//>>>>>>>>>>>>>>>>>>>>>>>>>>EVENTOS DE INPUTt
