@@ -195,7 +195,7 @@
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>EVENTOS DE INPUT
 
-const input = document.querySelector("input");
+// const input = document.querySelector("input");
 
 //Keydown - quando uma tecla é pressionada (captura tudo, incluindo ctrl, shift, etc.)
 // input.addEventListener("keydown", (event) => {
@@ -218,3 +218,6 @@ const input = document.querySelector("input");
 // function inputChange() {
 //   console.log("O INPUT MUDOU!");
 // }
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>EXPRESSÃO REGULAR
+//REGEXR.COM
