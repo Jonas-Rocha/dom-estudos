@@ -1,3 +1,5 @@
+/*
+
 //Visualizar o conteúdo do document.
 //console.log(document)
 
@@ -78,7 +80,7 @@
 //guestSurname.textContent = "Fernandes";
 
 //adiciona após o último filho.
-//newGuest.append(guestName, guestSurname /*Também funciona com virgula*/); //adiciona dentro do "li" o "span" do guestName
+//newGuest.append(guestName, guestSurname Também funciona com virgula*); //adiciona dentro do "li" o "span" do guestName
 //adiciona antes do primeiro filho.
 // newGuest.prepend(guestSurname);
 
@@ -130,10 +132,10 @@
 // addEventListener("click", (event) => {
 //   event.preventDefault();
 
-//   /*Retorna todas as informações do evento.*/
+//   Retorna todas as informações do evento.
 //   console.log(event);
 
-//   /*Retorna o elemento clickado.*/
+//   Retorna o elemento clickado.
 //   console.log(event.target.text);
 // });
 
@@ -144,7 +146,7 @@
 //   console.log(ul.scrollTop);
 
 //   if (ul.scrollTop > 302) {
-//     /*console.log("Fim da lista");*/
+//     console.log("Fim da lista");
 
 //     ul.scrollTo({
 //       top: 0,
@@ -164,18 +166,18 @@
 
 //form.addEventListener("//aqui eu poderia escolher qual evento eu iria querer lidar",);
 
-// form.onsubmit /*aqui eu poderia escolher especificamente o evento "onsubmit" para trabalhar*/ =
+// form.onsubmit aqui eu poderia escolher especificamente o evento "onsubmit" para trabalhar =
 //   (event) => {
 //     event.preventDefault();
 //     console.log("Você fez submit no formulário #1");
-//     /*o evento "onsubmit" diferente do "Onclick" aceita imprimir a tecla "enter" por exemplo, diferente do "onclick" que é apenas clickando*/
+//     o evento "onsubmit" diferente do "Onclick" aceita imprimir a tecla "enter" por exemplo, diferente do "onclick" que é apenas clickando
 //   };
 
-// form.onsubmit /*aqui eu poderia escolher especificamente o evento "onsubmit" para trabalhar*/ =
+// form.onsubmit aqui eu poderia escolher especificamente o evento "onsubmit" para trabalhar =
 //   (event) => {
 //     event.preventDefault();
 //     console.log("Você fez submit no formulário #2");
-//     /*o evento "onsubmit" diferente do "Onclick" aceita imprimir a tecla "enter" por exemplo, diferente do "onclick" que é apenas clickando*/
+//     o evento "onsubmit" diferente do "Onclick" aceita imprimir a tecla "enter" por exemplo, diferente do "onclick" que é apenas clickando
 //   };
 
 //>>>>>>>>>SEMPRE QUE FAZEMOS COM O ONSUBMIT ELE APENAS IRÁ CONSIDERAR O ÚLTIMO QUE VOCÊ CRIOU E NÃO IRÁ CONSIDERAR OS QUE VIERAM ANTES
@@ -195,7 +197,7 @@
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>EVENTOS DE INPUT
 
-const input = document.querySelector("input");
+// const input = document.querySelector("input");
 
 //Keydown - quando uma tecla é pressionada (captura tudo, incluindo ctrl, shift, etc.)
 // input.addEventListener("keydown", (event) => {
@@ -218,3 +220,32 @@ const input = document.querySelector("input");
 // function inputChange() {
 //   console.log("O INPUT MUDOU!");
 // }
+
+*/
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>EXPRESSÃO REGULAR
+//REGEXR.COM
+
+const input = document.querySelector("input");
+const form = document.querySelector("form");
+const regex = /\D+/;
+input.addEventListener("input", () => {
+  const value = input.value;
+  //   Retorna o padrão encontrado na string
+  //   console.log(value.match(regex));
+  //   Testa se atende o padrão
+  //   const isValid = regex.test(value);
+  //   console.log(isValid);
+});
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const value = input.value;
+
+  if (!regex.test(value)) {
+    alert("Padrão não encontrado");
+  }
+  // const value = input.value.replace(regex, "");
+
+  // console.log(value);
+});
