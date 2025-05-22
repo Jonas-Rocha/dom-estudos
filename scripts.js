@@ -226,26 +226,49 @@
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>EXPRESSÃO REGULAR
 //REGEXR.COM
 
+// const input = document.querySelector("input");
+// const form = document.querySelector("form");
+// const regex = /\D+/g;
+// input.addEventListener("input", () => {
+//   const value = input.value;
+//   //   Retorna o padrão encontrado na string
+//   //   console.log(value.match(regex));
+//   //   Testa se atende o padrão
+//   //   const isValid = regex.test(value);
+//   //   console.log(isValid);
+// });
+
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   const value = input.value;
+
+//   if (!regex.test(value)) {
+//     alert("Padrão não encontrado");
+//   }
+//   // const value = input.value.replace(regex, "");
+
+//   // console.log(value);
+// });
+
+//>>>>>>>>>>>>>>>>>>>>FAZENDO DEBUG
+
 const input = document.querySelector("input");
 const form = document.querySelector("form");
-const regex = /\D+/;
-input.addEventListener("input", () => {
-  const value = input.value;
-  //   Retorna o padrão encontrado na string
-  //   console.log(value.match(regex));
-  //   Testa se atende o padrão
-  //   const isValid = regex.test(value);
-  //   console.log(isValid);
-});
 
-form.addEventListener("submit", (event) => {
+form.onsubmit = (event) => {
   event.preventDefault();
+
   const value = input.value;
+  const hasNumberRegex = /\d+/g;
 
-  if (!regex.test(value)) {
-    alert("Padrão não encontrado");
+  if (hasNumberRegex.test(value)) {
+    alert("O texto contém número. Por favor, digite corretamente.");
+  } else {
+    alert("Enviado!");
   }
-  // const value = input.value.replace(regex, "");
+};
 
-  // console.log(value);
-});
+/*OBS: o Debug é feito no inspecionar do navegador. na aba "Sources", eu clicko no numero da linha e ele faz um breakpoint para parar o meu código ali.
+isso serve para eu ir testando o código bloco por bloco até encontrar o problema.
+na parte "Scope" dentro da aba "Sources" eu posso configurar quantos breakpoints eu quero para o Debug e quais eu pulo se eu quiser. tem como configurar.
+na parte "Watch" eu posso adicionar as variaveis que ja existem no meu código e ir obervando o comportamento delas.*/
